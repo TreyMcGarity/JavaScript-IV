@@ -19,7 +19,7 @@ class Person {
         this.location = personAttr.location;
     }
     speak() {
-        console.log(`Hello my name is ${thiis.name}, I am from ${this.location}`);
+        console.log(`Hello my name is ${this.name}, I am from ${this.location}`);
     }
 }
 // #### Instructor
@@ -71,10 +71,10 @@ class Student extends Person {
         list.forEach(subjects => {console.log(`${subjects}`);});
     }
     PRAssignment() {
-        console.log(`${student.name} has submitted a PR for ${this.subject}`);
+        console.log(`${this.student} has submitted a PR for ${this.subject}`);
     }
     sprintChallenge() {
-        console.log(`${student.name} has begun sprint challenge on ${subject}`);
+        console.log(`${this.student} has begun sprint challenge on ${this.subject}`);
     }
 }
 // #### Project Manager
@@ -97,7 +97,7 @@ class ProjectManager extends Instructor {
         console.log(`${this.name} announces to ${this.channel}, @channel standy times!`);
     }
     debugsCode(student, subject) {
-        console.log(`${this.name} debugs ${this.student.name}'s code on ${this.subject}`);
+        console.log(`${this.name} debugs ${this.student}'s code on ${this.subject}`);
     }
 }
 
@@ -142,5 +142,5 @@ var ShaneG = new ProjectManager ({
     gradClassName: "???",
     favInstructor: "???"
 });
-ShaneG.standUp("shane:");
-ShaneG.debugsCode(TreyM, "Web Development");
+ShaneG.standUp("WebPT10_shaneGooch");
+ShaneG.debugsCode(GuyM, "JavaScript");
